@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { text } from '@storybook/addon-knobs/react'
+import { color } from '@storybook/addon-knobs/react'
 
 import { Button } from './Button'
 
@@ -26,5 +26,5 @@ storiesOf('Button', module)
     <Button bg="orange">Hello world</Button>
   )))
   .addWithJSX('with a different background', () => (
-    <Button bg={text('bg', 'green')}>Hello world</Button>
+    <Button bg={color('bg', 'green', 'group1')}>Hello world</Button>
   ))

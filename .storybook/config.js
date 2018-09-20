@@ -6,4 +6,4 @@ function loadStories() {
   req.keys().forEach(file => req(file))
 }
 
-configure(loadStories)
+configure(loadStories, module)

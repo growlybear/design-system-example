@@ -6,7 +6,14 @@ import { Button } from './Button'
 
 storiesOf('Button', module)
   .addWithJSX('with background', withInfo(
-    'description of Button component'
+    `
+    description of Button component
+
+    ~~~js
+    <Button>For clicking</Button>
+    ~~~
+
+    `
   )(() => (
     <Button bg="orange">Hello world</Button>
   )))
